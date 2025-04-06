@@ -2,7 +2,7 @@
 import qrcode
 
 
-redirect_url = "https://csd4537.github.io/index.html/"
+redirect_url = "https://2sigmawatersupply.github.io/generator/"
 
 qr = qrcode.QRCode(
     version=1,
