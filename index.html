@@ -1,26 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Redirecting...</title>
+    <title>Redirecting to Instagram...</title>
     <script>
-      
-        fetch('https://your-api-or-json-file.com/redirect-url')
-            .then(response => response.json())
-            .then(data => {
-               
-                window.location.replace(data.url);
-            })
-            .catch(() => {
-              
-                window.location.replace("https://www.instagram.com/2sigma.water");
-            });
+       
+        document.documentElement.style.display = 'none';
+        
+     
+        window.location.replace("https://www.instagram.com/2sigma.water");
     </script>
     <style>
-        body { display: none; }  <!-- Κρύβει την σελίδα εντελώς -->
+    
+        body { display: none !important; }
     </style>
 </head>
 <body>
-   
+  
     <noscript>
         <meta http-equiv="refresh" content="0; url=https://www.instagram.com/2sigma.water" />
     </noscript>
