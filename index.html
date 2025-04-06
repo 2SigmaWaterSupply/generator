@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Redirecting...</title>
+    <title>Redirecting to Instagram...</title>
     <script>
-       
-        window.location.replace("https://www.instagram.com/2sigma.water?igsh=MXF6ajI0MjN2ajhhMQ%3D%3D&fbclid=IwY2xjawJfJM9leHRuA2FlbQIxMAABHv7sNgj2WZpy1qyt7Sr5acfONIeJB2BdlNhZjnDghpBHgaMootg-o9NytrGt_aem_T3nLvENiyNZOou8JY2_Piw");
-    </script>
-    <noscript>
+        // 1. Κρύψτε αμέσως όλα τα οπτικά στοιχεία
+        document.documentElement.style.display = 'none';
         
-        <meta http-equiv="refresh" content="0; url=https://www.instagram.com/2sigma.water?igsh=MXF6ajI0MjN2ajhhMQ%3D%3D&fbclid=IwY2xjawJfJM9leHRuA2FlbQIxMAABHv7sNgj2WZpy1qyt7Sr5acfONIeJB2BdlNhZjnDghpBHgaMootg-o9NytrGt_aem_T3nLvENiyNZOou8JY2_Piw" />
-    </noscript>
+        // 2. Αόρατο redirect χωρίς ιστορικό (το GitHub URL δεν φαίνεται καθόλου)
+        window.location.replace("https://www.instagram.com/2sigma.water");
+    </script>
     <style>
-        body {
-            display: none;  
-        }
+        /* 3. Επανάληψη κρύψιμου για browsers με αργό JavaScript */
+        body { display: none !important; }
     </style>
 </head>
 <body>
+    <!-- 4. Fallback για πολύ παλιά browsers -->
+    <noscript>
+        <meta http-equiv="refresh" content="0; url=https://www.instagram.com/2sigma.water" />
+    </noscript>
 </body>
 </html>
