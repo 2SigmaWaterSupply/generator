@@ -2,7 +2,7 @@
 import qrcode
 
 # Το GitHub Pages URL σας
-redirect_url = "https://your-username.github.io/qr-redirect/"
+redirect_url = "https://github.com/csd4537/index.html.git/"
 
 # Δημιουργία QR
 qr = qrcode.QRCode(
