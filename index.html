@@ -3,19 +3,19 @@
 <head>
     <title>Redirecting to Instagram...</title>
     <script>
-        // 1. Κρύψτε αμέσως όλα τα οπτικά στοιχεία
+        
         document.documentElement.style.display = 'none';
         
-        // 2. Αόρατο redirect χωρίς ιστορικό (το GitHub URL δεν φαίνεται καθόλου)
+       
         window.location.replace("https://www.instagram.com/2sigma.water");
     </script>
     <style>
-        /* 3. Επανάληψη κρύψιμου για browsers με αργό JavaScript */
+       
         body { display: none !important; }
     </style>
 </head>
 <body>
-    <!-- 4. Fallback για πολύ παλιά browsers -->
+   
     <noscript>
         <meta http-equiv="refresh" content="0; url=https://www.instagram.com/2sigma.water" />
     </noscript>
